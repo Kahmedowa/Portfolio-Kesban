@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kesban Ahmedova | Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+</head>
+<body>
+ <!-- Navbar -->
+ <nav class="navbar navbar-expand-lg border-bottom shadow-sm">
+  <div class="container d-flex justify-content-between align-items-center">
+    <!-- Toggler for mobile view -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Left-aligned Navbar Links -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="about.html" data-lang="about-link">About Me</a></li>
+        <li class="nav-item"><a class="nav-link" href="projects.html" data-lang="projects-link">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="certifications.html" data-lang="certifications-link">Certifications</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html" data-lang="contact-link">Contact</a></li>
+      </ul>
+    </div>
+      
+      <!-- Right-aligned Dark Mode and Language Dropdown -->
+      <div class="d-flex align-items-center">
+        <button id="dark-mode-toggle" class="btn btn-icon" title="Toggle Dark Mode" aria-label="Toggle Dark Mode">
+          <i class="fas fa-moon"></i>
+        </button>
+      <div class="dropdown ms-3">
+        <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="languageDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+          EN
+        </button>
+        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="languageDropdown">
+          <li><a class="dropdown-item" href="#" onclick="changeLanguage('en')">English</a></li>
+          <li><a class="dropdown-item" href="#" onclick="changeLanguage('de')">Deutsch</a></li>
+          <li><a class="dropdown-item" href="#" onclick="changeLanguage('bg')">Български</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+
+ <!-- Hero Section -->
+<header class="hero text-center">
+  <img src="img/img-me.png" alt="Kesban Ahmedova Portrait" class="portrait">
+  <div class="transparent-header"> 
+
+  <h1 data-lang="autor-name">Kesban Ahmedova</h1>
+  <p class="lead" data-lang="hero-lead">Junior Web Developer & Data Analyst</p>
+  <p data-lang="hero-subtext">Ready to tackle new challenges and bring creativity to each project.</p>
+  </div>
+</header>
+<!-- Footer -->
+<footer class="footer">
+
+  <div class="footer-content">
+    <!-- Social Media Links - Left Aligned -->
+    <div class="social-icons">
+      <a href="https://github.com/kahmedowa" target="_blank" rel="nofollow noopener" class="social-icon" aria-label="GitHub">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/kesban-ahmedova/" target="_blank" rel="nofollow noopener" class="social-icon" aria-label="LinkedIn">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+      </a>
+    </div>
+
+    <!-- Contact Information - Right Aligned -->
+    <div class="contact-info">
+      <div class="contact-item">
+        <i class="feather feather-phone"></i>
+        <a href="tel:+4915757864857" aria-label="Phone number">+49 157 5786 4857</a>
+      </div>
+      <div class="contact-item">
+        <i class="feather feather-mail"></i>
+        <a href="mailto:k.ahmedowa94@gmail.com" aria-label="Email address">k.ahmedowa94@gmail.com</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Centered Copyright Text -->
+  <p class="footer-text" data-lang="footer-text">
+    &copy; 2024 Kesban Ahmedova. All rights reserved.
+  </p>
+</footer>
+
+
+<!-- Bootstrap and JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

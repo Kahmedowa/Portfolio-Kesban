@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-lang="contact-title">Contact - Kesban Ahmedova</title>
+  <link rel="stylesheet" href="contact.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+</head>
+<body>
+<!-- Navbar -->
+<div class="flex-container">
+<nav class="navbar navbar-expand-lg  border-bottom shadow-sm">
+  <div class="container d-flex justify-content-between align-items-center">
+    <!-- Navbar Brand (optional) -->
+    <a class="navbar-brand" href="index.html" data-lang="portfolio">Home</a>
+
+    <!-- Toggler for mobile view -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Left-aligned Navbar Links -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="about.html" data-lang="about-link">About Me</a></li>
+        <li class="nav-item"><a class="nav-link" href="projects.html" data-lang="projects-link">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="certifications.html" data-lang="certifications-link">Certifications</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html" data-lang="contact-link">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Right-aligned Dark Mode and Language Dropdown -->
+    <div class="d-flex align-items-center">
+      <button id="dark-mode-toggle" class="btn btn-icon" title="Toggle Dark Mode" aria-label="Toggle Dark Mode">
+        <i class="fas fa-moon"></i>
+      </button>
+      <div class="dropdown ms-3">
+        <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="languageDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+          EN
+        </button>
+        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="languageDropdown">
+          <li><a class="dropdown-item" href="#" onclick="changeLanguage('en')">English</a></li>
+          <li><a class="dropdown-item" href="#" onclick="changeLanguage('de')">Deutsch</a></li>
+          <li><a class="dropdown-item" href="#" onclick="changeLanguage('bg')">Български</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+
+  <header class="text-center py-5">
+    <h1 data-lang="contact-title">Contact</h1>
+  </header>
+
+  <!-- Contact Form Section -->
+  <section class="contact-form container my-5 w-25">
+    <form id="contactForm">
+        <div class="mb-3">
+            <label for="name" class="form-label" data-lang="contact-name-label">Your Name</label>
+            <input type="text" class="form-control" id="name" name="name" required>
+        </div>
+        
+        <div class="mb-3">
+            <label for="email" class="form-label" data-lang="contact-email-label">Your Email</label>
+            <input type="email" class="form-control" id="email" name="email" required>
+        </div>
+
+        <div class="mb-3">
+            <label for="subject" class="form-label" data-lang="contact-subject-label">Subject</label>
+            <input type="text" class="form-control" id="subject" name="subject" required>
+        </div>
+
+        <div class="mb-3">
+            <label for="message" class="form-label" data-lang="contact-message-label">Message</label>
+            <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary w-40" data-lang="contact-send-button">Send Message</button>
+    </form>
+    <div id="formMessage" class="mt-3"></div> <!-- To display success/error messages -->
+  </section>
+
+<!-- Footer -->
+<footer class="footer">
+
+  <div class="footer-content">
+    <!-- Social Media Links - Left Aligned -->
+    <div class="social-icons">
+      <a href="https://github.com/kahmedowa" target="_blank" rel="nofollow  noopener" class="social-icon" aria-label="GitHub">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/kesban-ahmedova/" target="_blank" rel="nofollow noopener" class="social-icon" aria-label="LinkedIn">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+      </a>
+    </div>
+
+    <!-- Contact Information - Right Aligned -->
+    <div class="contact-info">
+      <div class="contact-item">
+        <i class="feather feather-phone"></i>
+        <a href="tel:+4915757864857" aria-label="Phone number">+49 157 5786 4857</a>
+      </div>
+      <div class="contact-item">
+        <i class="feather feather-mail"></i>
+        <a href="mailto:k.ahmedowa94@gmail.com" aria-label="Email address">k.ahmedowa94@gmail.com</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Centered Copyright Text -->
+  <p class="footer-text" data-lang="footer-text">
+    &copy; 2024 Kesban Ahmedova. All rights reserved.
+  </p>
+</footer>
+
+
+
+  <!-- Bootstrap and JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="contact.js"></script>
+
+</body>
+</html>

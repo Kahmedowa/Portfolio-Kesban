@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-lang="projects-title">Projects - Kesban Ahmedova</title>
+  <link rel="stylesheet" href="projects.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <div class="flex-container">
+    <nav class="navbar navbar-expand-lg border-bottom shadow-sm">
+      <div class="container d-flex justify-content-between align-items-center">
+        <a class="navbar-brand" href="index.html" data-lang="portfolio">Home</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="about.html" data-lang="about-link">About Me</a></li>
+            <li class="nav-item"><a class="nav-link" href="projects.html" data-lang="projects-link">Projects</a></li>
+            <li class="nav-item"><a class="nav-link" href="certifications.html" data-lang="certifications-link">Certifications</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html" data-lang="contact-link">Contact</a></li>
+          </ul>
+        </div>
+        <div class="d-flex align-items-center">
+          <button id="dark-mode-toggle" class="btn btn-icon" title="Toggle Dark Mode" aria-label="Toggle Dark Mode"><i class="fas fa-moon"></i></button>
+          <div class="dropdown ms-3">
+            <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="languageDropdown" data-bs-toggle="dropdown" aria-expanded="false">EN</button>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="languageDropdown">
+              <li><a class="dropdown-item" href="#" onclick="changeLanguage('en')">English</a></li>
+              <li><a class="dropdown-item" href="#" onclick="changeLanguage('de')">Deutsch</a></li>
+              <li><a class="dropdown-item" href="#" onclick="changeLanguage('bg')">Български</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="text-center py-5">
+      <h1 data-lang="projects-title">Projects</h1>
+    </header>
+
+    <!-- Project Section -->
+    <section class="project-container">
+      <div class="project-card">
+        <img src="img/casinoCarley.PNG" alt="Lucky Game Project">
+        <div class="card-body">
+          <h5 data-lang="project1-title">Lucky Game</h5>
+          <p data-lang="project1-text">A JavaScript-based game that tests your luck. Try your hand at winning!</p>
+          <a href="https://kahmedowa.github.io/Lucky-Game/" class="btn btn-primary" data-lang="view-project-btn1" target="_blank" rel="noopener noreferrer">View Project</a>
+        </div>
+      </div>
+      <div class="project-card">
+        <img src="img/travelBG.PNG" alt="Visit Bulgaria Project">
+        <div class="card-body">
+          <h5 data-lang="project2-title">Visit Bulgaria</h5>
+          <p data-lang="project2-text">A website promoting tourism in Bulgaria with attractive visuals and travel information.</p>
+          <a href="https://kahmedowa.github.io/Visit-Bulgaria/" class="btn btn-primary" data-lang="view-project-btn2" target="_blank" rel="noopener noreferrer">View Project</a>
+        </div>
+      </div>
+      <div class="project-card">
+        <img src="img/hotelBerlin.PNG" alt="Hotel Berlin Project">
+        <div class="card-body">
+          <h5 data-lang="project3-title">Hotel Berlin Booking</h5>
+          <p data-lang="project3-text">A hotel booking website built with HTML, CSS, and JavaScript.</p>
+          <a href="https://kahmedowa.github.io/HotelBerlin-Buchen/" class="btn btn-primary" data-lang="view-project-btn3" target="_blank" rel="noopener noreferrer">View Project</a>
+        </div>
+      </div>
+      <div class="project-card">
+        <img src="img/umweltschutz.PNG" alt="Umweltschutz Blog Project">
+        <div class="card-body">
+          <h5 data-lang="project4-title">Umweltschutz Blog</h5>
+          <p data-lang="project4-text">A blog about environmental protection built with HTML and CSS, promoting eco-friendly practices.</p>
+          <a href="https://kahmedowa.github.io/Umweltschutz-Blog/" class="btn btn-primary" data-lang="view-project-btn4" target="_blank" rel="noopener noreferrer">View Project</a>
+
+          
+        </div>
+      </div>
+      <div class="project-card">
+        <img src="img/BMIrechner.PNG" alt="BMI Calculator Project">
+        <div class="card-body">
+          <h5 data-lang="project5-title">BMI Calculator</h5>
+          <p data-lang="project5-text">A BMI calculator built with HTML, CSS, and JavaScript to help users track their health.</p>
+          <a href="https://kahmedowa.github.io/BMI/" class="btn btn-primary" data-lang="view-project-btn5" target="_blank" rel="noopener noreferrer">View Project</a>
+        </div>
+      </div>
+      <div class="project-card">
+        <img src="img/certificate/BG-Crime-Data-Dashboard-img.png" alt="Bulgaria Crime Data Dashboard">
+        <div class="card-body">
+          <h5 data-lang="project6-title">Bulgaria Crime Data Dashboard</h5>
+          <p data-lang="project6-text">An interactive crime data dashboard for Bulgaria, created with R for visualizing and analyzing crime statistics.</p>
+          <a href="https://6cdjy9-kesban-ahmedova.shinyapps.io/project/" class="btn btn-primary" data-lang="view-project-btn6" target="_blank" rel="noopener noreferrer">View Project</a>
+        </div>
+      </div>
+    </section>
+
+ <!-- Footer -->
+<footer class="footer">
+
+  <div class="footer-content">
+    <!-- Social Media Links - Left Aligned -->
+    <div class="social-icons">
+      <a href="https://github.com/kahmedowa" target="_blank" rel="nofollow noopener" class="social-icon" aria-label="GitHub">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/kesban-ahmedova/" target="_blank" rel="nofollow noopener" class="social-icon" aria-label="LinkedIn">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+      </a>
+    </div>
+
+    <!-- Contact Information - Right Aligned -->
+    <div class="contact-info">
+      <div class="contact-item">
+        <i class="feather feather-phone"></i>
+        <a href="tel:+4915757864857" aria-label="Phone number">+49 157 5786 4857</a>
+      </div>
+      <div class="contact-item">
+        <i class="feather feather-mail"></i>
+        <a href="mailto:k.ahmedowa94@gmail.com" aria-label="Email address">k.ahmedowa94@gmail.com</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Centered Copyright Text -->
+  <p class="footer-text" data-lang="footer-text">
+    &copy; 2024 Kesban Ahmedova. All rights reserved.
+  </p>
+</footer>
+
+  <!-- Bootstrap and JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="projects.js"></script>
+</body>
+</html>
